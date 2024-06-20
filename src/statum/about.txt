@@ -1,0 +1,6 @@
+statum should end up being a dynamically linked library
+
+statum.h
+statum.c
+baseState.h (base struct)
+    - NullState descendent

@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build",
+			"command": "gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-o",
+				"${cwd}/bin/om",
+				"${cwd}/src/*.c",
+				"-lglfw",
+				"-lGLU",
+				"-lGL"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: gcc"
+		},
+		{
+			"type": "shell",
+			"label": "build debug",
+			"command": "gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${cwd}/src/*.c",
+				"${cwd}/src/statum/*.c",
+				"-o",
+				"bin/om"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: gcc"
+		}
+	]
+}
