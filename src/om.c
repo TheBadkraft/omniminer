@@ -9,6 +9,8 @@
 const int WIDTH = 1350;
 const int HEIGHT = 900;
 
+
+
 //  initialize context
 void init(const char *title, bool isFullscreen) {
     puts("initialize...");
